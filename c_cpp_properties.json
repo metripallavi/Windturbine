@@ -2,11 +2,19 @@
     "configurations": [
         {
             "name": "Win32",
-            "includePath": ["${workspaceFolder}/**"],
-            "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-            "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Qt/5.x.x/msvc2019/include",  // Adjust the path to your Qt installation
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30037/bin/Hostx64/x64/cl.exe",  // Adjust the path to your MSVC compiler
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
         }
     ],
     "version": 4
